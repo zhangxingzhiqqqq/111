@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			a {
+				position: relative;
+				height: 40px;
+				background: gray;
+				display: block;
+				
+			}
+			.wema{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				top:40px;
+				left: -20px;
+				display: none;
+			}
+			.san {
+				width: 0px;
+				height: 0px;
+				border-bottom: 10px solid white;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				position: absolute;
+				left: 50%;
+				margin-left: -10px;
+				top:-10px;
+				
+			}
+			a:hover .wema{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">下载app
+		<div class="wema">
+			<div class="san"></div>
+		</div>
+		</a>
+	</body>
+</html>

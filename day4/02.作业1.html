@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.count-down{
+				width: 330px;
+				height: 468px;
+				background: #F1EDED;
+				margin:0 auto;
+				border-top:2px solid #EC817E;
+			}
+			.chang{
+				/*background: yellow;*/
+				margin-top:80px;
+				text-align: center;
+				font-size: 24px;
+				color:#EF6D74;
+			}
+			.sd{
+				text-align: center;
+				margin-top: 40px;
+			}
+			.cd {
+				margin-top:42px;
+			}
+			.cd-font{
+				text-align: center;
+				color:#ccc;
+			}
+			.cd-time {
+				/*background: yellow;*/
+				width: 236px;
+				margin: 20px auto;
+			}
+			.cd-time div{
+				float: left;
+			}
+			.num{
+				width: 64px;
+				height: 64px;
+				background: #605751;
+				text-align: center;
+				line-height: 64px;
+				font-size: 20px;
+				color:white;
+			}
+			.mh {
+				width: 22px;
+				height: 64px;
+				/*background: yellow;*/
+				text-align: center;
+				line-height: 64px;
+				font-size: 20px;
+				
+			}
+			.clearfix:after{
+				content:"";
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="count-down">
+			<div class="chang">00:00场</div>
+			<div class="sd">
+				<img src="sd.png"/>
+			</div>
+			<div class="cd">
+				<div class='cd-font'>距离开始还有</div>
+				<div class="cd-time clearfix">
+					<div class="num ">00</div>
+					<div class="mh ">:</div>
+					<div class="num">12</div>
+					<div class="mh">:</div>
+					<div class="num">31</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

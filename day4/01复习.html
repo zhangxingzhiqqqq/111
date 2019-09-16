@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*div {
+				color:red;
+				font-size: 30px;
+			}
+			
+			div{
+				color:green;
+			}*/
+			
+			/*div{
+				width: 100px;
+				height: 50px;
+				border:1px solid red;
+				text-align: center;
+				line-height: 50px;
+				margin: 0 auto;
+			}*/
+			img{
+				/*text-align: center;*/
+				/*margin: 0 auto;*/
+			}
+			.div1{
+				text-align: center;
+			}
+			.father {
+				width: 500px;
+				background: yellow;
+				/*padding-top:1px;*/
+				
+				/*border-top:1px solid transparent;*/
+				
+				/*overflow: hidden;*/
+			}
+			.son {
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin:10px;
+				float:left
+			}
+			.xiongda{
+				height: 500px;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			特性：
+			   层叠性
+			  继承性：color,font-size,text-,font-,line-    a标签
+			  优先级：style>id>class>元素 
+			
+			标签的显示模式：
+			   块级：div,p,h1-h6
+			              独占一行，
+			              可以设置宽高
+			              默认是父级宽度的100%
+			  行内：span,a,i斜体,em斜体
+			             不独占一行
+			             不可以设置宽高
+			           它的内外边距水平方向可以设置，垂直方向不可以设置，margin-top,padding-top
+			  行内块级:img,input
+			       不独占一行，
+			       可以设置宽高
+			       行内块级元素中间有空隙(浮动，给父元素设置font-size:0px;)
+			    
+			  盒模型：width,height,padding字与边框距离,border,margin盒子与盒子距离
+			  
+			  border:大小 样式 颜色；border-top border-bottom border-left border-right
+			    画三角性：width；0 height:0  border-top: 
+			   画圆  border-radius
+			  
+			  padding:元素内容到边框的距离
+			     padding:10px;  上下左右都是10px
+			     padding:10px 20px; 上下10px 左右是20
+			     padding:10px 20px 30px; 上 左右20  下30
+			     padding:10px 20px 30px 40px 上右下左
+			     
+			     
+			  margin:盒子到盒子的距离
+			  	margin:0 auto	上下为0 左右居中
+			   
+			  外边距合并：
+			     给父亲加内边距padding
+			   border-top:1px solid transparent;
+			  overflow: hidden;
+			  
+			  
+			<div class="xiongda"></div>  margin-bottom 50px   50px
+		    <div class="xionger"></div>  margin-top:100px     100px
+		    
+		   
+		   float:
+		      inline-block
+		      浮动清除影响：
+		       1. 给父亲加高度
+		       2.给父亲加overflow:hidden
+		       3.给儿子加个兄弟 空的div clear:both;
+		       4.给父亲加一个类名
+		       
+		       .clearfix:after{
+		       	  content:"";
+		       	  display:block;
+		       	  clear:both;
+		       }
+		-->
+		
+		<!--<div>赵丽颖</div>
+		<div class="div1">
+			<img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2071176826,2858130876&fm=173&app=49&f=JPEG?w=218&h=146&s=AAF25484703399943E852C8203005016"/>
+			<div class="father">
+				<div class="son"></div>
+			</div>
+		</div>
+		
+		<div class="div4" style="border:1px solid red;display: inline-block;">赵丽颖</div>
+		<div class="div4" style="border:1px solid red;display: inline-block;">迪丽热巴</div>-->
+		<div class="father">
+			<div class="son"></div>
+			<div class="son"></div>
+			<div class="son"></div>
+			<div></div>
+		</div>
+		<div class="xiongda"></div>
+	</body>
+</html>
