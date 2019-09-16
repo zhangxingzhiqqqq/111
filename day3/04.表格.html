@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.table1 {
+				/* 用于table内的属性：
+					 *cellpadding="0"：边框与其内容的间隙大小
+					 *cellspacing="0"：边框与边框之间的间隙大小*/
+				/*用于表格的边框，默认separate分开的，改为collapse合并*/
+				border-collapse: collapse;
+				width: 500px;
+				/*文本默认：none，capitalize：单词小写全变大写
+				uppercase： 全变大写，lowercase：全变小写*/
+				text-transform: capitalize;
+				/*font-family:元素的字体选择*/
+				font-family: "times new roman";
+			}
+			/*th、td的引用：
+			 * 		不能在th、td里面直接插入class，要在table里面插入
+			 		.类名 (空格) th
+			 		.类名 (空格) td
+			  tr、table的引用：
+			  		.类名
+			 */
+			.table1 th{
+				/*border:(填边界的宽度) solid (填颜色的代码)：
+				 边界宽度和颜色设置*/
+				border:1px solid #B4D05E;
+			}
+			.table1 td{
+				border:1px solid #B4D05E;
+			}
+			.tr1 {
+				/*背景颜色：background-color，
+				 文本框里面的颜色：color*/
+				background-color: #A7C942;
+				color:white;
+				/*文本对齐方式：text-align: left左;*/
+				text-align: left;
+			}
+			.bg {
+				background-color: #EAF2D3;				
+			}
+		</style>
+	</head>
+	<body>
+		<table class="table1">
+			<tr class="tr1">
+				<th>abc</th>
+				<th>abc</th>
+				<th>abc</th>
+			</tr>
+			<!--(tr>td{bcd}*3)*10 再按tab键-->
+			
+			<tr>
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr class="bg">
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr>
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr class="bg">
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr>
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr class="bg">
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr>
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr class="bg">
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr>
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			<tr class="bg">
+				<td>bcd</td>
+				<td>bcd</td>
+				<td>bcd</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

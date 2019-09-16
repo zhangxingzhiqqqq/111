@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*凡是class里面的都能在style里引用：.引用内容*/
+			.font100 {
+				font-size: 100px;	
+			}
+			/*对每一个字母类单独设置颜色*/
+			.cblue {
+				color:#4582F8;
+			}
+			.cred {
+				color:#E64236;
+			}
+			.cyellow{
+				color:#FAC00A;
+			}
+			.cgreen{
+				color:#36A752;
+			}
+			/*text-align:对整个单词类设置居中，
+			letter-spacing:每个字母之间的距离*/
+			.google{
+				text-align: center;
+				letter-spacing: -6px;	
+			}
+			
+			/*span没法居中，div可以居中*/
+			.spanjz {
+				background: red;
+				text-align: center;				
+			}
+			.divjz {
+				background: orange;
+				text-align: center;
+			}
+			
+			/*继承类：子类继承父类所有并进行覆盖，父类不执行，子类执行*/
+			.father {	
+				/*width: 100px;*/			
+				height: 100px;/*height:100px:高*/				
+				background: yellow;
+	
+			}
+			.son {
+				width: 100px;
+				height: 100px;
+				background: red;		
+				margin:0 auto;/*margin:0 auto；：居中*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="google">
+			<!--在div中设置class，在span里设置每个字体大小-->
+			<span class="cblue font100">G</span>			                                                                          
+			<span class="cred font100">o</span>
+			<span class="cyellow font100">o</span>
+			<span class="cblue font100">g</span>
+			<span class="cgreen font100">l</span>
+			<span class="cred font100">e</span>
+		</div>
+		
+		<span class="spanjz">居中</span>
+		<div class="divjz">div居中</div>
+		
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</body>
+</html>

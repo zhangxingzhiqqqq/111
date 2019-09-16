@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				background: yellow;
+			}
+			/*
+			div是块级元素，h1-h6 p ul li ol ：
+			     独占一行
+			    可以设置宽高
+			    
+			span: 行内元素  a em i b
+			   不独占一行，和其他元素在一行显示
+			   不可以设置宽高，行内元素的宽高是内容大小
+			 * */
+			span {
+				width: 100px;
+				height: 100px;
+				background: yellowgreen;
+			}
+			/*
+			   img input行内块级元素
+			    不独占一行，和其他元素在一行显示
+			    可以设置宽高
+			 * */
+			img {
+				width: 300px;
+				height: 300px;
+			}
+			input {
+				width: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>div1</div>
+		<div>div1</div>
+        <span>span</span>	
+        <span>span</span>		
+        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2370475086,357798946&fm=173&app=49&f=JPEG?w=218&h=146&s=EEEABB5643414341106025ED0300E070" alt="" />
+        <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2370475086,357798946&fm=173&app=49&f=JPEG?w=218&h=146&s=EEEABB5643414341106025ED0300E070" alt="" />
+        <input type="text" />
+	</body>
+</html>

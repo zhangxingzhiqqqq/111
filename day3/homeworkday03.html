@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*整个大框布局*/
+			.count-down{
+				width: 330px;
+				height: 468px;
+				background: #F1EDED;
+				margin: 0 auto;
+				border-top:2px solid #EC81 ;
+			}
+			/*第一大部分：00:00场*/
+			.chang{
+				/*background: yellow;*/
+				margin-top: 80px;
+				color:#EF6D74;
+				text-align: center;
+				font-size: 24px;
+			}
+			/*第二大部分：图片*/
+			.sd{
+				text-align:center;
+				margin-top: 40px;
+			}
+			/*第三大部分：距离开始时间与具体时间*/
+			.cd{
+				margin-top:42px;				
+			}
+			/*距离开始时间还有*/
+			.cd-font{
+				text-align: center;
+				color:#ccc;		/*字体颜色直接设置*/	
+			}
+			/*00:12:31*/
+			.cd-time{
+				background: yellow;
+				text-align: center;
+			}
+			/*时间：00 12 31*/
+			.num{
+				width: 64px;
+				height: 64px;
+				background: ;
+				text-align: center;
+				line-height: 64px;
+				font-size: 20px;
+				color: white;
+				background: #605751;
+			/*冒号 ：：*/
+			}
+			.mh{
+				/*冒号与时间之间的宽度*/
+				width: 22px;
+				/*高度与时间相同*/
+				height: 64px;
+				/*居中*/
+				text-align: center;
+				background: yellow;
+				
+				
+			}
+			/*清除浮动*/
+			.clearfix:after{
+				content: ;
+				display: block;
+				clear: both;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div class="count-down">
+		<div class="chang">00:00场 </div>
+		
+		<div class="sd"><img src="day0301.png" alt="" /></div>
+		
+		<div class="cd">
+			<div class="cd-font">距离开始还有</div>
+			
+			<div class="cd-time"> 
+					<div class="num">00</div>
+					<div class="hm">:</div>
+					<div class="num">12</div>
+					<div class="hm">:</div>
+					<div class="num">31</div></div>
+				
+							
+		</div>	
+		
+	</div>
+	</body>
+</html>

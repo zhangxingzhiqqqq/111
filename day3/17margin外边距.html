@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				/*左上和游览器合并*/
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.father {
+				width: 400px;
+				height: 400px;
+				background: yellow;
+				/*padding-top:20px;*/
+				/*第一种方法是给父元素加边框*/
+				/*border-top:1px solid transparent;*/
+				/*第二种方法加padding*/
+				padding-top: 1px;
+				/*第三种方法*/
+				/*overflow: hidden;*/
+			}
+			
+			.son {
+				/*外边距合并：*/
+				width: 100px;
+				height: 100px;
+				background: red;
+				/*margin-top: 20px;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="father">
+			<div class="son">儿子</div>
+		</div>
+
+	</body>
+
+</html>
